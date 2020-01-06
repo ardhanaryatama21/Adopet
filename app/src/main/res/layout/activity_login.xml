@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".Login">
+    <ImageView
+        android:id="@+id/logolgn"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/gambar"/>
+
+    <TextView
+        android:id="@+id/namaapps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/baloo_da"
+        android:text="@string/adopet"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="340dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="400dp"
+            android:layout_below="@+id/namaapps"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/bglayer">
+
+            <TextView
+                android:id="@+id/masuk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/patua_one"
+                android:text="@string/masuk"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="26sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layusername"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtnamapengguna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/username"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/laypassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:passwordToggleEnabled="true"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtkatasandi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/belum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/belum_punya_akun" />
+
+                <TextView
+                    android:id="@+id/txtdaftar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="21dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/daftar_sekarang"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/btngradient"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/masuk"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+</LinearLayout>

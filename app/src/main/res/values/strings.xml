@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Adopet</string>
+    <string name="title_activity_menu_utama">Menu_utama</string>
+    <string name="adopet">ADOPet</string>
+    <string name="username">Nama Pengguna</string>
+    <string name="password">Kata Sandi</string>
+    <string name="masuk">Masuk</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="daftar_sekarang">Daftar Sekarang</string>
+    <string name="gambar">gambar</string>
+    <string name="daftar">Daftar</string>
+    <string name="nama_anda">Nama Anda</string>
+    <string name="email_anda">Email Anda</string>
+    <string name="no_whatsapp">No Whatsapp</string>
+    <string name="pilih_provinsi">Pilih Provinsi</string>
+    <string name="pilih_kabupaten_kota">Pilih Kabupaten/Kota</string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+    <string name="masuk_sekarang">Masuk Sekarang</string>
+    <string name="cari">Cari</string>
+    <string name="pet">Pet</string>
+    <string name="akun">Akun</string>
+    <string name="home">Home</string>
+    <string name="store">Store</string>
+</resources>
