@@ -35,6 +35,7 @@ public class Session {
     public static final String KEY_katasandi= "katasandi";
     public static final String KEY_provinsi= "provinsi";
     public static final String KEY_kabupaten= "kabupaten";
+    public static final String KEY_foto= "foto";
 
     // Constructor
     public Session(Context context){
@@ -48,7 +49,7 @@ public class Session {
      * Create login session
      * */
     public void createLoginSession(String nama, String email, String nowhatsapp, String namapengguna,
-                                   String katasandi, String provinsi, String kabupaten){
+                                   String katasandi, String provinsi, String kabupaten, String foto){
         // Storing login value as TRUE
         editor.putBoolean(IS_LOGIN, true);
         // Storing email in pref
@@ -59,6 +60,7 @@ public class Session {
         editor.putString(KEY_katasandi,katasandi);
         editor.putString(KEY_provinsi,provinsi);
         editor.putString(KEY_kabupaten,kabupaten);
+        editor.putString(KEY_foto,foto);
 
         // commit changes
         editor.commit();

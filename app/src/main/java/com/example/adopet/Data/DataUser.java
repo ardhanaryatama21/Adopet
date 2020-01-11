@@ -1,7 +1,7 @@
 package com.example.adopet.Data;
 
 public class DataUser {
-    String foto;
+    /*String foto;
     String nama;
     String email;
     String nowhatsapp;
@@ -11,7 +11,6 @@ public class DataUser {
     String kabupaten;
 
     public DataUser(String foto, String nama, String email, String nowhatsapp, String username, String password, String provinsi, String kabupaten) {
-        this.foto = foto;
         this.nama = nama;
         this.email = email;
         this.nowhatsapp = nowhatsapp;
@@ -19,10 +18,7 @@ public class DataUser {
         this.katasandi = katasandi;
         this.provinsi = provinsi;
         this.kabupaten = kabupaten;
-    }
-
-    public String getFoto() {
-        return foto;
+        this.foto = foto;
     }
 
     public String getNama() {
@@ -52,4 +48,8 @@ public class DataUser {
     public String getKabupaten() {
         return kabupaten;
     }
+
+    public String getFoto() {
+        return foto;
+    }*/
 }
