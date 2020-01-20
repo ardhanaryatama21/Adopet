@@ -29,6 +29,7 @@
                 android:fontFamily="@font/patua_one"
                 android:text="@string/daftar"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:layout_marginTop="20dp"
                 android:textSize="26sp" />
 
@@ -44,6 +45,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
+                    android:textColor="@color/black"
                     android:hint="@string/nama_anda"
                     android:textSize="16sp" />
 
@@ -62,6 +64,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
+                    android:textColor="@color/black"
                     android:hint="@string/email_anda"
                     android:inputType="textEmailAddress"
                     android:textSize="16sp" />
@@ -81,6 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
+                    android:textColor="@color/black"
                     android:hint="@string/no_whatsapp"
                     android:inputType="phone"
                     android:textSize="16sp" />
@@ -99,6 +103,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
+                    android:textColor="@color/black"
                     android:hint="@string/username"
                     android:textSize="16sp" />
 
@@ -117,6 +122,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
+                    android:textColor="@color/black"
                     android:hint="@string/password"
                     android:inputType="textPassword"
                     android:textSize="16sp" />
@@ -128,6 +134,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="21dp"
                 android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
                 android:layout_gravity="center"
                 android:text="@string/pilih_provinsi" />
 
@@ -137,6 +144,7 @@
                 android:layout_width="280dp"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:hint="@string/pilih_provinsi" />
 
             <TextView
@@ -144,6 +152,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
                 android:layout_gravity="center"
                 android:text="@string/pilih_kabupaten_kota" />
 
@@ -153,6 +162,7 @@
                 android:layout_gravity="center"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:hint="@string/pilih_kabupaten_kota"/>
 
             <LinearLayout
@@ -166,6 +176,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="21dp"
                     android:fontFamily="@font/roboto"
+                    android:textColor="@color/black"
                     android:text="@string/sudah_punya_akun" />
 
                 <TextView

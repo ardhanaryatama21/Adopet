@@ -1,19 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/searchbg">
 
-    <TextView
-        android:id="@+id/text_dashboard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center|top">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/layusername"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtnamapengguna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
+                android:hint="@string/username"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtpronvinsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layusername"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:text="@string/pilih_provinsi" />
+
+        <Spinner
+            android:id="@+id/spprovinsi"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpronvinsi"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtkabupaten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spprovinsi"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:text="@string/pilih_kabupaten_kota" />
+
+        <Spinner
+            android:id="@+id/spkabupaten"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtkabupaten"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtkategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spkabupaten"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:text="@string/kategori" />
+
+        <RadioGroup
+            android:id="@+id/rgkategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtkategori"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/semua"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rdkucing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kucing"
+                android:layout_marginStart="15dp"/>
+
+            <RadioButton
+                android:id="@+id/rdanjing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/anjing"
+                android:layout_marginStart="15dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtspesifikasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgkategori"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:text="@string/spesifikasi" />
+        <LinearLayout
+            android:id="@+id/lnchk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtspesifikasi"
+            android:layout_marginTop="15dp">
+            <CheckBox
+                android:id="@+id/chkvaksin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vaksin" />
+
+            <CheckBox
+                android:id="@+id/chksteril"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/steril" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/lnchk"
+            android:background="@drawable/btngradient"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/cari"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

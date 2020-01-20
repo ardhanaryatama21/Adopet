@@ -1,14 +1,16 @@
 package com.example.adopet.Data;
 
+import androidx.annotation.NonNull;
+
 public class DataUser {
-    /*String foto;
-    String nama;
-    String email;
-    String nowhatsapp;
-    String namapengguna;
-    String katasandi;
-    String provinsi;
-    String kabupaten;
+    private String foto;
+    private String nama;
+    private String email;
+    private String nowhatsapp;
+    private String namapengguna;
+    private String katasandi;
+    private String provinsi;
+    private String kabupaten;
 
     public DataUser(String foto, String nama, String email, String nowhatsapp, String username, String password, String provinsi, String kabupaten) {
         this.nama = nama;
@@ -51,5 +53,20 @@ public class DataUser {
 
     public String getFoto() {
         return foto;
-    }*/
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "akun{" +
+                "foto='" + foto + '\'' +
+                ", nama='" + nama + '\'' +
+                ", email='" + email + '\'' +
+                ", nowhatsapp='" + nowhatsapp + '\'' +
+                ", namapengguna='" + namapengguna + '\'' +
+                ", katasandi='" + katasandi + '\'' +
+                ", provinsi='" + provinsi + '\'' +
+                ", kabupaten='" + kabupaten + '\'' +
+                '}';
+    }
 }

@@ -23,13 +23,7 @@ public class CariFragment extends Fragment {
         cariViewModel =
                 ViewModelProviders.of(this).get(CariViewModel.class);
         View root = inflater.inflate(R.layout.fragment_cari, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        cariViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 }

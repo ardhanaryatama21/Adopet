@@ -3,10 +3,21 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="whatsapp">#25D366</color>
+    <color name="whatsapp2">#1da851</color>
     <color name="white">#ffffff</color>
     <color name="green">#00F260</color>
+    <color name="darkgreen">#00c14c</color>
     <color name="black">#000000</color>
     <color name="black2">#707070</color>
     <color name="blue">#0575E6</color>
     <color name="grey">#AAAAAA</color>
+    <color name="semiwhite">#FAFAFA</color>
+    <color name="semiwhite2">#E5E5E5</color>
+    <color name="red">#FF0000</color>
+    <color name="darkblue">#045db8</color>
+    <color name="bgandroid">#FAFAFA</color>
+    <color name="bgandroid2">#EEEEEE</color>
+
+
 </resources>
